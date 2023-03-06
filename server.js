@@ -5,8 +5,7 @@ const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", true);
 
-const DB_HOST =
-  "mongodb+srv://Comondear:oDSfQLCoecGRd0xB@goitnodehw.nuq6uhf.mongodb.net/Contacts_reader?retryWrites=true&w=majority";
+const { DB_HOST } = process.env;
 
 mongoose
   .connect(DB_HOST)
